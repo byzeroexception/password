@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class enthernet {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String user= " ",username=" " ,pas = " ",password=" ";//cre
+		String login,loginpas;
+		String[] not = new String[6];
+		not[0] = "-";
+		not[1] = "*";
+		not[2] = "+";
+		not[3] = "!";
+		not[4] = "'";
+		not[5] = "&";
+		System.err.println("\tSign in");
+		
+		System.out.print("create of username: ");
+		username = scanner.nextLine();
+		user = username;
+		for(int i=1;i>0;i++) {
+		System.out.print("create password: \n");
+		password = scanner.nextLine();
+		pas = password;
+		System.out.println("");
+		
+		if(pas.contains(not[0]) ||
+		   pas.contains(not[1]) || 
+		   pas.contains(not[2]) || 
+		   pas.contains(not[3]) || 
+		   pas.contains(not[4]) || 
+		   pas.contains(not[5]))
+		{
+			
+			break;
+		}else {
+			System.err.println("err: Your password must contain at least one special character");
+		}}
+	
+	}}
+		
