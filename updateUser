@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class enthernet {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String user= " ",username=" " ,pas = " ",password=" ";//cre
+		String login,loginpas;
+		String[] not = new String[6];
+		not[0] = "-";
+		not[1] = "*";
+		not[2] = "+";
+		not[3] = "!";
+		not[4] = "'";
+		not[5] = "&";
+		System.err.println("\tSign up");
+		
+		System.out.print("create of username: ");
+		username = scanner.nextLine();
+		user = username;
+		for(int i=1;i>0;i++) {
+		System.out.print("\ncreate password: ");
+		
+		password = scanner.nextLine();
+		pas = password;
+	
+		
+		if(pas.contains(not[0]) ||
+		   pas.contains(not[1]) || 
+		   pas.contains(not[2]) || 
+		   pas.contains(not[3]) || 
+		   pas.contains(not[4]) || 
+		   pas.contains(not[5]))
+		{
+			System.out.println("sign up successful!");
+			System.out.println(" ");
+			System.out.println("\tLogin Up");
+			for(int i4=1;i4>0;i4++) {
+			System.out.print("username: ");
+			login = scanner.nextLine();
+			System.out.print("password: ");
+			loginpas = scanner.nextLine();
+			
+			if(login.equals(user)&&loginpas.equals(pas)) {
+				System.out.println("login successful!");
+			break;
+			}
+			else {
+				System.err.println("\nusername or password incorrect");
+			}}
+			break;
+		}else {
+
+			System.err.print("\nerr: Your password must contain at least one special character\n");
+		}}
+	
+	}}
+		
