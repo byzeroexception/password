@@ -1,0 +1,89 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class ethernet {
+
+	public static void main(String[] args) {
+	    JFrame f=new JFrame("Button Example");  
+	    JButton m1=new JButton("Masa 1");  
+	    m1.setBounds(0,0,85,30);  
+	    JButton m2=new JButton("Masa 2");  
+	    m2.setBounds(85,0,85,30);  
+	    JButton m3=new JButton("Masa 3");  
+	    m3.setBounds(170,0,85,30);  
+	    JButton m4=new JButton("Masa 4");  
+	    m4.setBounds(255,0,85,30);  
+	    JButton m5=new JButton("Masa 5");  
+	    m5.setBounds(340,0,85,30);  
+	    JButton m6=new JButton("Masa 6");  
+	    m6.setBounds(425,0,85,30);  
+	    
+	    JButton m7=new JButton("Masa 7");  
+	    m7.setBounds(0,35,85,30);  
+	    JButton m8=new JButton("Masa 8");  
+	    m8.setBounds(85,35,85,30); 
+	    JButton m9=new JButton("Masa 9");
+	    m9.setBounds(170,35,85,30);
+	    JButton m10=new JButton("Masa 10");
+	    m10.setBounds(255,35,85,30);
+	    JButton m11=new JButton("Masa 11");
+	    m11.setBounds(340,35,85,30);
+	    JButton m12=new JButton("Masa 12");  
+	    m12.setBounds(425,0,85,30);  
+	    //WorkSpace
+
+	    
+	    m1.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		System.out.println("masa 1 buton tıklandı");
+	    	}
+	    });
+	    m2.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		System.out.println("masa 2 buton tıklandı");
+	    	}
+	    });
+	    m3.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		System.out.println("masa 3 buton tıklandı");
+	    	}
+	    });
+	    m4.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		System.out.println("masa 4 buton tıklandı");
+	    	}
+	    });
+	    m5.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		System.out.println("masa 5 buton tıklandı");
+	    	}
+	    });
+	    m6.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		System.out.println("masa 6 buton tıklandı");
+	    	}
+	    });
+	   
+	    
+	    f.add(m1);
+	    f.add(m2);
+	    f.add(m3);
+	    f.add(m4);
+	    f.add(m5);
+	    f.add(m6);
+	    f.add(m7);
+	    f.add(m8);
+	    f.add(m9);
+	    f.add(m10);
+	    f.add(m11);
+	    f.add(m12);
+	    f.setSize(400,400);  
+	    f.setLayout(null);  
+	    f.setVisible(true);  
+	    }
+	}
+
+
